@@ -1,0 +1,15 @@
+[package]
+name = "mmu"
+version = "0.1.0"
+authors = ["pleb <pleb@msftpc>"]
+edition = "2018"
+
+[dependencies]
+vectorized = { path = "../vectorized" }
+safecast = { path = "../safecast" }
+falkasm = { path = "../falkasm" }
+conststore = { path = "../conststore" }
+
+[profile.release]
+debug = true
+
